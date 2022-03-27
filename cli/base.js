@@ -4,11 +4,10 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(js|jsx)$/,
+        test: /\.(ts|tsx)$/,
         loader: "babel-loader",
         exclude: ["/node_modules/"],
       },
-      { test: /\.(ts|tsx)$/, loader: "ts-loader", exclude: ["/node_modules/"] },
       {
         test: /\.less$/i,
         use: ["style-loader", "css-loader", "postcss-loader", "less-loader"],
